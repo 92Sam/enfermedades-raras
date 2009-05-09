@@ -7,29 +7,36 @@ import isg3.usuarios.UsuarioNormal;
 
 import java.util.Collection;
 import java.util.Date;
+import java.util.LinkedList;
 
 public class Proyectos {
 	private Integer id;
 	private UsuarioAdministrador administrador;
 	private UsuarioCualificado cualificado;
-	
 	/**
 	 *usuriosAdscritos son los Usuarios normales */
 	private Collection<UsuarioNormal> usuriosAdscritos;
-	
 	private String denominacion;
 	private Collection<Donaciones> donaciones;
 	private Date fechaInicio;
 	private Date fechaFinPrevista;
-	
 	/**fechaFinReal indicará que a partir de esa fecha 
 	 * el proyecto quedará cerrado
 	 * **Para cerrar un proyecto fechaFinReal != null*/
 	private Date fechaFinReal;
-	
-	private Enfermedades enfermedad;
-	
+	private Enfermedades enfermedad;	
 	private Firmas firma;
+	
+	public Proyectos(){
+		this.administrador = new UsuarioAdministrador();
+		this.usuriosAdscritos = new LinkedList<UsuarioNormal>();
+		this.denominacion = "PROYECTO DE PRUEBA";
+		this.donaciones = new LinkedList<Donaciones>();
+		this.enfermedad = new Enfermedades();
+		
+		
+		
+	}
 
 	public Integer getId() {
 		return id;

@@ -3,6 +3,7 @@ package isg3.enfermedades;
 import isg3.proyectos.Proyectos;
 
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class Enfermedades {
 	private Integer id ; 
@@ -20,6 +21,13 @@ public class Enfermedades {
 	
 	//medicamentos aplicables 
 	private Medicamentos medicamentos;
+	
+	public Enfermedades(){
+		this.nombreComun = "enfermedad de prueba";
+		this.lsintomas = new LinkedList<Sintomas>();
+		this.tratamiento = new Tratamientos();
+		
+	}
 
 	public Integer getId() {
 		return id;
