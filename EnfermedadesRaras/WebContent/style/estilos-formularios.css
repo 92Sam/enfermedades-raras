@@ -32,7 +32,7 @@ h2 {font-size:1.0em ; color: green ; font-weight: bold ; text-decoration: none ;
 #login {padding-top:50px}
 #etiqueta{margin: .4em 0;}
 #etiqueta label { width: 25% ; float: left ; color:green ; font-size:15px}
-.btn {color:blue ; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
 #pie{background-color:white; border-left:1px solid black ; border-right:1px solid black ; height:65px ; padding-top:10px ; border-top:1px solid black}
 #pieuno  {background-color: white ; float:left ; width:150px}
 #piedos  {background-color: white ; float:left ; width:498px}
