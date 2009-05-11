@@ -7,17 +7,17 @@
 <title>Asociacion Enfermedades Raras - Proyectos</title>
 </head>
 <body>
-<jsp:include page="cabecera.jsp"></jsp:include>
-<div id="contenido">
-<jsp:include page="menu-lateral.jsp"></jsp:include>
-<div class="proyectos-principal">
-Para crear un nuevo proyecto, pulse aqui:
-<a href="FrontController?res=addProyecto.jsp">Nuevo Proyecto</a>
-</div>
-<div class="proyectos-detalle"></div>
-</div><!-- fin contenido -->
-<jsp:include page="pie.jsp"></jsp:include>
 
+<div id="pie">
+<div id="pieuno">
+<ul><li><a href="#">Inicio</a></li><li><a href="#">Qu&eacute; Hacemos</a></li><li><a href="#">Qui&eacute;nes Somos</a></li></ul>
+</div>
+<div id="piedos"></div>
+<div id="pietres">
+<ul><li><a href="#">Colabora</a></li><li><a href="#">Registro</a></li><li><a href="#">Login</a></li></ul>
+</div>
+</div>
+<div id="curva-inferior"></div>
 </body>
 </html>
 
