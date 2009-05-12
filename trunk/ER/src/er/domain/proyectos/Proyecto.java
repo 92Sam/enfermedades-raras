@@ -9,7 +9,7 @@ import er.domain.usuarios.UsuarioCualificado;
 import er.domain.usuarios.UsuarioNormal;
 
 public class Proyecto {
-	private Integer id;
+	
 	private UsuarioAdministrador administrador;
 	
 	/**
@@ -40,13 +40,7 @@ public class Proyecto {
 		return this.descripcion;
 	}
 	
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 
 	public UsuarioAdministrador getAdministrador() {
 		return administrador;

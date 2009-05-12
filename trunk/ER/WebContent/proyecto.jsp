@@ -21,6 +21,13 @@
 			<ul><li><a href="enfermedades.html">Enfermedades</a></li><li><a href="#">Proyectos</a></li><li><a href="#">Donaciones</a></li><li><a href="historia.jsp">Historias</a></li><li><a href="publicar.html">Publicar</a></li><li><a href="firma.html">Firma</a></li><li><a href="ayuda.html">Ayuda</a></li></ul>
 		</div>
 	<p>Esta página contendrá información sobre los distintos proyectos puestos en marcha en la asociación.</p>
+	<%String usr = (String)request.getSession().getAttribute("session.user");
+	if (usr.equals("practica")){	
+	%>
+	<div id="creaProyecto">
+	<a href="crearProyecto.jsp">Crear Proyecto</a>
+	</div>
+	<%} %>
 	<jsp:include page ="proyectos.jsp"/>
 	</div>
 	<div id="pie">

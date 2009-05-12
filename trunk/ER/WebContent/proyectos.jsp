@@ -20,7 +20,7 @@
 	<br />
 	<%= p.getDescripcion() %>
 	<div id ="proyectos">
-	<h3>Fecha final prevista para el proyecto: <%=p.getFechaFinPrevista().getFirstDayOfWeek()  %></h3>
+	<h3>Enfermedad sobre la que trata el proyecto: <%=p.getEnfermedad().getNombreComun()  %></h3>
 	</div>		
 	<% } %>
 </body>
