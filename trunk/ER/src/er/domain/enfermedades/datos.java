@@ -41,12 +41,14 @@ public class datos {
 	Firma f1 = new Firma("Manuel","Molero",new Nif("47013928L"));
 	Firma f2 = new Firma("Francisco","Benitez",new Nif("47013928M"));
 	UsuarioCualificado u1= new UsuarioCualificado("Luis", lenf);
+	UsuarioCualificado u2= new UsuarioCualificado("pepe", lenf);
 	
 	
 	private datos(){
 		lpro = new LinkedList<Proyecto>();
 		usuarios = new LinkedList<UsuarioCualificado>();
 		usuarios.add(u1);
+		usuarios.add(u2);
 		lpro.add(p1);
 		lpro.add(p2);
 		lpro.add(p3);
@@ -68,7 +70,9 @@ public class datos {
 		lenf.add(e4);
 		lfir.add(f1);
 		lfir.add(f2);
-		this.addEnfermedades(lenf);
+		u1.setEnfermedades(lenf);
+		u2.setEnfermedades(lenf);
+		
 		
 	}
 	
@@ -139,9 +143,5 @@ public class datos {
 	public List getProyectos(){
 		return this.lpro;
 	}
-	public void addEnfermedades(List<Enfermedad> l){
-		for(Enfermedad e:l)
-			u1.addEnfermedad(e);
-	}
-
+	
 }

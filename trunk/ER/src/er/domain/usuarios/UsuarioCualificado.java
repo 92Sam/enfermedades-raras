@@ -25,12 +25,13 @@ public class UsuarioCualificado implements IUsuario{
 		return nombre;
 		}
 	
-	public void addEnfermedad(Enfermedad e){
-		this.enfermedades.add(e);
-	}
+	
 	
 	public List getEnfermedades(){
 		return enfermedades;
+	}
+	public void setEnfermedades (List<Enfermedad> le){
+		this.enfermedades = le;
 	}
 
 	@Override

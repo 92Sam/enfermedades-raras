@@ -55,50 +55,27 @@ if(esta){
 <p><%=res %></p>
 		
 
-	<table id=tablaEnfermedad>
-  <tr>
+	
+ 
   	<% if(esta){ 
-    out.write("<th scope='col'>"+nombre+"</th>");
-  
+    //out.write("<th scope='col'>"+nombre+"</th>");
+    out.write("<h2>"+nombre+"</h2>");
+    out.write("<br/>");
    Iterator it = datos.getInstance().getUsuariosC().iterator();
  	while(it.hasNext()){
 	UsuarioCualificado u = (UsuarioCualificado)it.next();
 	Iterator it2 = u.getEnfermedades().iterator();
 	while(it2.hasNext()){
 		Enfermedad enf = (Enfermedad)it2.next();
-		if(enf.getNombreComun().equals(nombre));
- 	out.write("<td>"+u.getNombre()+"</a></td>");
+		if(enf.getNombreComun().equals(nombre))
+			out.write(""+u.getNombre()+"<br/>");
+ 	
 	}
- 	}
-  	out.write("<th scope='col'><a href='#'>descripcion</a></th>");
-  	out.write("</tr>");
-  	out.write("<tr>");
-  	out.write("<td>Proyectos</td>");
-  	out.write("</tr>");
-  	out.write("<tr>");
-  	out.write("<td>Tratamientos</td>");
-  	out.write("<td><a href='#'>Tratamiento1</a></td>");
-  	out.write("<td><a href='#'>Tratamiento2</a></td>");
-  	out.write("</tr>");
-  	out.write("<tr>");
-  	out.write("<td>Medicamentos</td>");
-  	out.write("<td><a href='#'>Medicamento1</a></td>");
-  	out.write("<td><a href='#'>Medicamento2</a></td>");
-  	out.write("</tr>");
-  	out.write("<tr>");
-  	out.write("<tr>");
-  	out.write("<td>Sintomas</td>");
-  	out.write("<td><a href='#'>Sintoma1</a></td>");
-  	out.write("<td><a href='#'>Sintoma2</a></td>");
-  	out.write("</tr>");
-  	out.write("<tr>");
-  	out.write("<td>Centros</td>");
-  	out.write("<td><a href='#'>Centro1</a></td>");
-  	out.write("<td><a href='#'>Centro2</a></td>");
-  	}
+	
+ 	} 	
+}
   	%>
-  	</tr>
-  	</table>
+  	
 
 </div>
 	</div>
