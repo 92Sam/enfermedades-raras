@@ -21,7 +21,7 @@
 	<div id="contenido">
 		<div id="menu">
 			<h1>Menú</h1>
-			<ul><li><a href="enfermedades.html">Enfermedades</a></li><li><a href="proyectos.html">Proyectos</a></li><li><a href="#">Donaciones</a></li><li><a href="historia.jsp">Historias</a></li><li><a href="publicar.html">Publicar</a></li><li><a href="firma.html">Firma</a></li><li><a href="ayuda.html">Ayuda</a></li></ul>
+			<ul><li><a href="enfermedades.html">Enfermedades</a></li><li><a href="proyecto.jsp">Proyectos</a></li><li><a href="#">Donaciones</a></li><li><a href="historia.jsp">Historias</a></li><li><a href="publicar.html">Publicar</a></li><li><a href="firma.html">Firma</a></li><li><a href="ayuda.html">Ayuda</a></li></ul>
 		</div>
 	<p>Aquí podrá ver las historias subidas por nuestros usuarios</p>
 	<jsp:include page ="historias.jsp"/> 

@@ -22,7 +22,7 @@
 	<div id="contenido">
 		<div id="menu">
 			<h1>Menú</h1>
-			<ul><li><a href="#">Enfermedades</a></li><li><a href="proyectos.html">Proyectos</a></li><li><a href="#">Donaciones</a></li><li><a href="historia.html">Historias</a></li><li><a href="publicar.html">Publicar</a></li><li><a href="firma.html">Firma</a></li><li><a href="ayuda.html">Ayuda</a></li></ul>
+			<ul><li><a href="#">Enfermedades</a></li><li><a href="proyecto.jsp">Proyectos</a></li><li><a href="#">Donaciones</a></li><li><a href="historia.html">Historias</a></li><li><a href="publicar.html">Publicar</a></li><li><a href="firma.html">Firma</a></li><li><a href="ayuda.html">Ayuda</a></li></ul>
 		</div>
 	<p>
 	Aquí podrá buscar toda la información posible relacionada con la enfermedad que desee. Para utilizar el servicio, introduzca el nombre de la 		enfermedad(nombre común o nombre técnico) y observe los resultados tanto de centros que la tratan, tratamientos posibles, sintomas y medicamentos, tanto en uso como experimentales.
@@ -34,10 +34,6 @@
 		  <div id="etiqueta">
 		  <label for="nombreComun"><strong>Nombre Común</strong></label>
 		  <input type="text" id="nombreC" name="nombreC" maxlength="40"/>
-		  </div>
-		  <div id="etiqueta">
-		  <label for="nombreTecnico"><strong>Nombre Técnico</strong></label>
-		  <input type="text" id="nombreT" name="nombreT" maxlength="40" />
 		  </div>
 		  <input id="btnBuscador" class="btn" type="submit" value="Buscar" />
 		</fieldset>
