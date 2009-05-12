@@ -1,33 +1,25 @@
 package er.domain.enfermedades;
 
+import java.util.List;
+
 public class Medicamento {
 	
-	private Integer id;
-	private String denominacion;
-	private String posologia;
+	private String nombre;
+	private List<Enfermedad> enfermedades;
+	
+	public Medicamento(String nom, List<Enfermedad> enf){
+		nombre = nom;
+		enfermedades = enf;
+	}
+	
 
-	public String getPosologia() {
-		return posologia;
+
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setPosologia(String posologia) {
-		this.posologia = posologia;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getDenominacion() {
-		return denominacion;
-	}
-
-	public void setDenominacion(String denominacion) {
-		this.denominacion = denominacion;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 }

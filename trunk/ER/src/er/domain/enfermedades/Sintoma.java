@@ -1,20 +1,30 @@
 package er.domain.enfermedades;
 
 public class Sintoma {
+	private String nombre;
 	private String descripcion;
-	private String observaciones;
 	private String gravedad;
-	public String getDescripcion() {
-		return descripcion;
+	
+	public Sintoma(String nom, String desc, String gra){
+		nombre = nom;
+		descripcion = desc;
+		gravedad = gra;
 	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+	
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public String getObservaciones() {
-		return observaciones;
-	}
-	public void setObservaciones(String observaciones) {
-		this.observaciones = observaciones;
+	
+	public String getDescripcion() {
+		return descripcion;
 	}
 	public String getGravedad() {
 		return gravedad;

@@ -26,6 +26,12 @@ h2 {font-size:1.0em ; color: green ; font-weight: bold ; text-decoration: none ;
 #navegacion a:active{}
 #contenido{background-color: white ; border-right:1px solid black; border-left:1px solid black ; padding-bottom:20px ; height:400px}
 #contenido p{padding:5px 10px 5px 10px ; text-indent:20px }
+#enlaceRegistro{padding-top:50px}
+#enlaceRegistro a{color: blue ; text-decoration:none}
+#enlaceRegistro a:link{}
+#enlaceRegistro a:visited{}
+#enlaceRegistro a:hover{color:black ; text-decoration:none}
+#enlaceRegistro a:active{}
 #menu{background-color: green ; width:180px ; float:left ; text-align:left ; margin:5px 30px 5px 5px ; border:3px solid orange}
 #menu li{list-style:none ; margin:4px 0px 4px 6px ; font-size:20px ; font-family: "Times New Roman", Times, serif }
 #menu h1{text-decoration:none ; font-size:20px ; color:white ; padding-top:4px}

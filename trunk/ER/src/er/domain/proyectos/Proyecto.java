@@ -11,7 +11,6 @@ import er.domain.usuarios.UsuarioNormal;
 public class Proyecto {
 	private Integer id;
 	private UsuarioAdministrador administrador;
-	private UsuarioCualificado cualificado;
 	
 	/**
 	 *usuriosAdscritos son los Usuarios normales */
@@ -55,14 +54,6 @@ public class Proyecto {
 
 	public void setAdministrador(UsuarioAdministrador administrador) {
 		this.administrador = administrador;
-	}
-
-	public UsuarioCualificado getCualificado() {
-		return cualificado;
-	}
-
-	public void setCualificado(UsuarioCualificado cualificado) {
-		this.cualificado = cualificado;
 	}
 
 	public Collection<UsuarioNormal> getUsuariosAdscritos() {

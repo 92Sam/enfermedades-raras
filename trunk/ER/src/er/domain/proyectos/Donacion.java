@@ -3,26 +3,30 @@ package er.domain.proyectos;
 import er.domain.comun.Nif;
 
 public class Donacion {
-	private String cantidad;
-	private Boolean esMiembro;
+	private float cantidad;
 	//si no fuera miembro recogemos algunos de datos del donante
 	private String nombre;
 	private String apellidos;
 	private Nif dni;
 	private String pais;
+	private Proyecto proyecto;
 	
-	public String getCantidad() {
+	public Donacion(String nom, String ape, Nif dni, String pais, Proyecto p,float cant){
+		cantidad = cant;
+		nombre=nom;
+		apellidos=ape;
+		this.dni = dni;
+		this.pais=pais;
+		proyecto=p;
+	}
+	
+	public float getCantidad() {
 		return cantidad;
 	}
-	public void setCantidad(String cantidad) {
+	public void setCantidad(float cantidad) {
 		this.cantidad = cantidad;
 	}
-	public Boolean getEsMiembro() {
-		return esMiembro;
-	}
-	public void setEsMiembro(Boolean esMiembro) {
-		this.esMiembro = esMiembro;
-	}
+	
 	public String getNombre() {
 		return nombre;
 	}

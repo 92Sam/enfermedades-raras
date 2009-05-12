@@ -2,6 +2,7 @@ package er.domain.enfermedades;
 
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 
 import er.domain.proyectos.Proyecto;
 import er.domain.usuarios.UsuarioCualificado;
@@ -13,7 +14,6 @@ public class Enfermedad {
 	private Collection<Proyecto> lproyectos;
 	
 	private String nombreComun;
-	private String nombreTecnico;
 	private String descripcion;
 	private Collection<Sintoma> lsintomas;
 	private Collection<CDiagnostico> cdiagnostico;
@@ -21,7 +21,7 @@ public class Enfermedad {
 	private Tratamiento tratamiento;
 	
 	//medicamentos aplicables 
-	private Medicamento medicamentos;
+	private List<Medicamento> medicamentos;
 
 	public Enfermedad(String nom){
 		nombreComun = nom;
@@ -52,13 +52,6 @@ public class Enfermedad {
 		this.nombreComun = nombreComun;
 	}
 
-	public String getNombreTecnico() {
-		return nombreTecnico;
-	}
-
-	public void setNombreTecnico(String nombreTecnico) {
-		this.nombreTecnico = nombreTecnico;
-	}
 
 	public Collection<Sintoma> getLsintomas() {
 		return lsintomas;
@@ -84,11 +77,11 @@ public class Enfermedad {
 		this.tratamiento = tratamiento;
 	}
 
-	public Medicamento getMedicamentos() {
+	public List getMedicamentos() {
 		return medicamentos;
 	}
 
-	public void setMedicamentos(Medicamento medicamentos) {
+	public void setMedicamentos(List<Medicamento> medicamentos) {
 		this.medicamentos = medicamentos;
 	}
 	
