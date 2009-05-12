@@ -16,11 +16,39 @@
 	<ul><li><a href="index.html">Inicio</a></li><li><a href="#">Qué Hacemos</a></li><li><a href="#">Quiénes Somos</a></li><li><a href="#">Cómo puedes colaborar</a></li><li><a href="#">Registro</a></li><li><a href="#">Noticias</a></li></ul>
 </div>
 	<div id="contenido">
-	<div id="enlaceRegistro">
-		<a href="registroNormal.html">Registro como usuario normal</a>
-		<br />
-		<a href="registroCualificado.html">Registro como usuario cualificado</a>
-	</div>
+		<div id="noticias">
+		<form>
+		<fieldset>
+		  <legend>Registro</legend>
+		  <div id="etiqueta">
+		  <label for="nombre"><strong>Nombre</strong></label>
+		  <input type="text" id="nombre" maxlength="20" />
+		  </div>
+		  <div id="etiqueta">
+		  <label for="nombre"><strong>Apellidos</strong></label>
+		  <input type="text" id="apellidos" maxlength="30" />
+		  </div>
+		  <div id="etiqueta">
+		  <label for="nombre"><strong>Contraseña</strong></label>
+		  <input type="password" id="contraseña" maxlength="10" />
+		  </div>
+		  <div id="etiqueta">
+		  <label for="nombre"><strong>Repite</strong></label>
+		  <input type="password" id="repitecontraseña" maxlength="10" />
+		  </div>
+		  <div id="etiqueta">
+		  <label for="nombre"><strong>NIF</strong></label>
+		  <input type="text" id="dni" maxlength="9"/>
+		  </div>
+		  <div id="etiqueta">
+		  <label for="nombre"><strong>EMail</strong></label>
+		  <input type="text" id="eMail" maxlength="50"/>
+		  </div>
+		  <input class="btn" type="submit" value="Registro" />
+		</fieldset>
+		</form>
+		<div id="respuesta"></div>
+		</div>
 	</div>
 	<div id="pie">
 	<div id="pieuno">
