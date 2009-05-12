@@ -41,7 +41,9 @@
 	</div>
 	<div id="resultado">
 	<h1>Resultado de la búsqueda</h1>
-	<% String nombre = request.getParameter("nombreC"); 
+	<%
+	datos dat = datos.getInstance();
+	String nombre = request.getParameter("nombreC"); 
 String res="";
 boolean esta = datos.getInstance().comprueba(nombre);
 if(esta){
@@ -57,7 +59,7 @@ if(esta){
   <tr>
   	<% if(esta){ 
     out.write("<th scope='col'>"+nombre+"</th>");
-   Enfermedad e = datos.getInstance().getEnfermedad(nombre);
+  
    Iterator it = datos.getInstance().getUsuariosC().iterator();
  	while(it.hasNext()){
 	UsuarioCualificado u = (UsuarioCualificado)it.next();

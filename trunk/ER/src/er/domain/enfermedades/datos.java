@@ -40,7 +40,7 @@ public class datos {
 	Historia h2 = new Historia(e1,new UsuarioNormal("Francisco"),new String("esta es la historia de prueba 2 escrita por Francisco y es un poco mas larga para ver como queda"));
 	Firma f1 = new Firma("Manuel","Molero",new Nif("47013928L"));
 	Firma f2 = new Firma("Francisco","Benitez",new Nif("47013928M"));
-	UsuarioCualificado u1 = new UsuarioCualificado("Luis", lenf);
+	UsuarioCualificado u1= new UsuarioCualificado("Luis", lenf);
 	
 	
 	private datos(){
@@ -68,6 +68,7 @@ public class datos {
 		lenf.add(e4);
 		lfir.add(f1);
 		lfir.add(f2);
+		this.addEnfermedades(lenf);
 		
 	}
 	
@@ -138,4 +139,9 @@ public class datos {
 	public List getProyectos(){
 		return this.lpro;
 	}
+	public void addEnfermedades(List<Enfermedad> l){
+		for(Enfermedad e:l)
+			u1.addEnfermedad(e);
+	}
+
 }

@@ -23,28 +23,12 @@
 		<div id="formProyecto">
 		<form>
 		<fieldset>
-		  <legend>Registrar Proyecto</legend>
+		  <legend>Eliminar Proyecto</legend>
 		  <div id="etiqueta">
 		  <label for="nombre"><strong>Nombre</strong></label>
 		  <input type="text" id="nombre" maxlength="30" />
 		  </div>
-		  <div id="etiqueta">
-		  <label for="nombre"><strong>Fecha Inicial</strong></label>
-		  <input type="text" id="apellidos" maxlength="30" />
-		  </div>
-		  <div id="etiqueta">
-		  <label for="nombre"><strong>Fecha Fin Pre</strong></label>
-		  <input type="text" id="contraseña" maxlength="30" />
-		  </div>
-		  <div id="etiqueta">
-		  <label for="nombre"><strong>Enfermedad</strong></label>
-		  <input type="text" id="enfermedad" maxlength="20" />
-		  </div>
-		  <div id="etiqueta">
-		  <label for="nombre"><strong>Descripcion</strong></label>
-		  <input type="text" id="descripcion" maxlength="100"/>
-		  </div>
-		  <input class="btn" type="submit" value="Registrar" />
+		  <input class="btn" type="submit" value="Eliminar" />
 		</fieldset>
 		</form>
 	</div>

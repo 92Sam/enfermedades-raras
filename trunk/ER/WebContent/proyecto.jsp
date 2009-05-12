@@ -25,7 +25,8 @@
 	if (usr.equals("practica")){	
 	%>
 	<div id="creaProyecto">
-	<a href="crearProyecto.jsp">Crear Proyecto</a>
+	<a href="crearProyecto.jsp">Crear Proyecto</a><br />
+	<a href="eliminarProyecto.jsp">Eliminar Proyecto</a> 
 	</div>
 	<%} %>
 	<jsp:include page ="proyectos.jsp"/>
