@@ -58,7 +58,7 @@ if(esta){
   	<% if(esta){ 
     out.write("<th scope='col'>"+nombre+"</th>");
    Enfermedad e = datos.getInstance().getEnfermedad(nombre);
-  	out.write("<th scope='col'><a href='#'>descripcion</a></th>");
+  	out.write("<th scope='col'><a href='descripcion.jsp?var=nombre'>Descripción</a></th>");
   	out.write("</tr>");
   	out.write("<tr>");
   	out.write("<td>Proyectos</td>");
@@ -66,7 +66,7 @@ if(esta){
   	while(it.hasNext()){
 	Proyecto p = (Proyecto)it.next();
 	String nombrePro = p.getNombre();
-  	out.write("<td><a href='Informacion?res=infProyectos.jsp?nombrePro'>"+p.getNombre()+"</a></td>");
+  	out.write("<td><a href='#'>"+p.getNombre()+"</a></td>");
   	}
   	out.write("</tr>");
   	out.write("<tr>");

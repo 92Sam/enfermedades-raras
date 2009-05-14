@@ -96,6 +96,10 @@ public class Enfermedad {
 		return this.descripcion;
 	}
 	
+	public void setDescripcion(String desc){
+		descripcion = desc;
+	}
+	
 	public Collection<UsuarioCualificado> getUsuariosC(){
 		return this.usuariosC;
 	}

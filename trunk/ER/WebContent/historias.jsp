@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<% Iterator it  = datos.getInstance().getHistorias().iterator();
+<% 
+Iterator<Historia> it  = datos.getInstance().getHistorias().iterator();
 Historia h = null;
 	while(it.hasNext()){
 		h = (Historia)it.next();

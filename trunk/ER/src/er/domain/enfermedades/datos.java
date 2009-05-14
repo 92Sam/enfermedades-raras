@@ -36,8 +36,8 @@ public class datos {
 	Enfermedad e4 = new Enfermedad("Escapula Elevada");
 	Proyecto p4 = new Proyecto("Proyecto 4", new GregorianCalendar(2009, Calendar.JANUARY,2),new GregorianCalendar(2009, Calendar.AUGUST, 16),e4);
 	Proyecto p5 = new Proyecto("Proyecto 5", new GregorianCalendar(2009, Calendar.JANUARY,14),new GregorianCalendar(2009, Calendar.NOVEMBER, 22),e4);
-	Historia h1 = new Historia(e1,new UsuarioNormal("Pepe"),new String("esta es la historia de prueba 1 escrita por Pepe"));
-	Historia h2 = new Historia(e1,new UsuarioNormal("Francisco"),new String("esta es la historia de prueba 2 escrita por Francisco y es un poco mas larga para ver como queda"));
+	Historia h1 = new Historia(e3,new UsuarioNormal("Joaquin"),new String("esta es la historia de prueba 1 escrita por Pepe"));
+	Historia h2 = new Historia(e4,new UsuarioNormal("Francisco"),new String("esta es la historia de prueba 2 escrita por Francisco y es un poco mas larga para ver como queda"));
 	Firma f1 = new Firma("Manuel","Molero",new Nif("47013928L"));
 	Firma f2 = new Firma("Francisco","Benitez",new Nif("47013928M"));
 	UsuarioCualificado u1= new UsuarioCualificado("Luis", lenf);
@@ -58,6 +58,7 @@ public class datos {
 		lhis.add(h1);
 		lhis.add(h2);
 		e1.addProyecto(p1);
+		e1.setDescripcion("Descripción de Xeroderma Pigmentario");
 		e2.addProyecto(p2);
 		e3.addProyecto(p3);
 		e4.addProyecto(p4);
