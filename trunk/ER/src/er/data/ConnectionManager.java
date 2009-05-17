@@ -15,10 +15,10 @@ public class ConnectionManager {
     private Driver dBDriver = null;
     private static Properties dbprops = new Properties();;
     // TODO Confirma los datos para las conexiones
-    //private static final String dBUri = "jdbc:mysql://127.0.0.1:3306/pos";
-    //private static final String driverName = "com.mysql.jdbc.Driver";
-    //private static final String password = "ganimedes";
-    //private static final String username = "root";
+    private static final String dBUri = "jdbc:mysql://127.0.0.1:3306/pos";
+    private static final String driverName = "com.mysql.jdbc.Driver";
+    private static final String password = "vic84";
+    private static final String username = "root";
     
     
       private ConnectionManager() {
