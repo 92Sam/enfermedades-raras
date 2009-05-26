@@ -7,7 +7,7 @@ public class UsuarioAdministrador implements IUsuario{
 	private String nombre;
 	private String apellidos;
 	private String contrasena;
-	private Nif nif;
+	private String  nif;
 	private String EMail;
 	
 	@Override
@@ -26,7 +26,7 @@ public class UsuarioAdministrador implements IUsuario{
 		return EMail;
 	}
 	@Override
-	public Nif getNif() {
+	public String getNif() {
 		// TODO Auto-generated method stub
 		return nif;
 	}
@@ -51,7 +51,7 @@ public class UsuarioAdministrador implements IUsuario{
 		this.EMail = email;
 	}
 	@Override
-	public void setNif(Nif nif) {
+	public void setNif(String nif) {
 		// TODO Auto-generated method stub
 		this.nif = nif;
 	}

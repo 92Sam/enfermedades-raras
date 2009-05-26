@@ -13,7 +13,7 @@ import java.util.Properties;
 public class ConnectionManager {
     private static ConnectionManager cm;
     private Driver dBDriver = null;
-    private static Properties dbprops = new Properties();;
+    private static Properties dbprops = new Properties();
     // TODO Confirma los datos para las conexiones
     private static final String dBUri = "jdbc:mysql://127.0.0.1:3306/pos";
     private static final String driverName = "com.mysql.jdbc.Driver";
@@ -25,11 +25,11 @@ public class ConnectionManager {
        
 
       try {
-    	  InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("dbconfiguration.properties"); 
+    	  InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("BDProperties.properties"); 
     	  dbprops.load(is);
     	  //dbprops.load(new FileInputStream("dbconfiguration.properties"));
 	} catch (Exception e1) {
-		System.err.println("El fichero de propiedades de la BDs no se ha encontrado");
+		System.err.println("->>>>>>El fichero de propiedades de la BDs no se ha encontrado");
 		e1.printStackTrace();
 	}
 

@@ -21,7 +21,7 @@
 			<ul><li><a href="enfermedades.html">Enfermedades</a></li><li><a href="proyecto.jsp">Proyectos</a></li><li><a href="#">Donaciones</a></li><li><a href="historia.jsp">Historias</a></li><li><a href="publicar.html">Publicar</a></li><li><a href="firma.html">Firma</a></li><li><a href="ayuda.html">Ayuda</a></li></ul>
 		</div>
 		<div id="formProyecto">
-		<form>
+		<form id="formLogin" action="FrontController?res=addproyecto.jsp" method="post">
 		<fieldset>
 		  <legend>Registrar Proyecto</legend>
 		  <div id="etiqueta">

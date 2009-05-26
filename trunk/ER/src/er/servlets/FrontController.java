@@ -1,11 +1,20 @@
 package er.servlets;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import java.util.Set;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import er.data.IProyectosDAO;
+import er.data.IUsuarioAdministradorDAO;
+import er.data.JDBCProyectoDAO;
+import er.data.JDBCUsuarioAdministradorDAO;
 
 /**
  * Servlet implementation class for Servlet: FrontController
@@ -23,6 +32,7 @@ import javax.servlet.http.HttpSession;
 	
 	String user = "practica";
 	String passwd = "practica";
+	private static Properties data = new Properties();
 	
 	/* (non-Java-doc)
 	 * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -97,8 +107,30 @@ import javax.servlet.http.HttpSession;
 
 	public boolean valido(String userForm, String passwdForm) {
 		boolean res = false;
-		res = (userForm.equals(this.user) && passwdForm.equals(this.passwd));
-		return res;
+//		 try {
+//	    	  InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("data.properties"); 
+//	    	  data.load(is);
+//	    	  //dbprops.load(new FileInputStream("dbconfiguration.properties"));
+//		} catch (Exception e1) {
+//			System.err.println("El fichero de propiedades de la BDs no se ha encontrado");
+//			e1.printStackTrace();
+//		}
+		/* Tomamos los datos del login desde archivo de configuración
+		 
+		String pass = data.getProperty("password");
+		String usuario = data.getProperty("usuario");
+		*/		
+		
+		
+		/*tomamos los datos del login contra la BBDD*/
+		IUsuarioAdministradorDAO uAdminDAO = new JDBCUsuarioAdministradorDAO();
+		Set s = uAdminDAO.selectAdministrador(userForm, passwdForm);
+		return  s.contains(userForm) && s.contains(passwdForm);
+		
+		
+		
+		//return usuario.equals(userForm) && pass.equals(passwdForm);
+		
 
 	}
 }
