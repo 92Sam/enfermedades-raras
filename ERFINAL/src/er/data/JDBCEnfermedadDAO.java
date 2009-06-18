@@ -43,6 +43,7 @@ public class JDBCEnfermedadDAO implements IEnfermedadDAO {
             try {
                 if (result != null)
                     result.close();
+                	System.out.println("La conexion se ha cerrado");
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException e) {
@@ -79,6 +80,7 @@ public class JDBCEnfermedadDAO implements IEnfermedadDAO {
 		            try {
 		                if (result != null) {
 		                    result.close();
+		                    System.out.println("La conexion se ha cerrado");
 		                }
 		                if (stmt != null) {
 		                    stmt.close();
@@ -113,6 +115,7 @@ public class JDBCEnfermedadDAO implements IEnfermedadDAO {
 		            try {
 		                if (result != null) {
 		                    result.close();
+		                    System.out.println("La conexion se ha cerrado");
 		                }
 		                if (stmt != null) {
 		                    stmt.close();
@@ -147,6 +150,7 @@ public class JDBCEnfermedadDAO implements IEnfermedadDAO {
 	            try {
 	                if (result != null) {
 	                    result.close();
+	                    System.out.println("La conexion se ha cerrado");
 	                }
 	                if (stmt != null) {
 	                    stmt.close();
@@ -179,6 +183,7 @@ public class JDBCEnfermedadDAO implements IEnfermedadDAO {
             try {
                 if (result != null) {
                     result.close();
+                    System.out.println("La conexion se ha cerrado");
                 }
                 if (stmt != null) {
                     stmt.close();
